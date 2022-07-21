@@ -20,40 +20,40 @@ const addId = () => {
     })
 }
 
-addId()
+addId();
 
 // 2. Imprima o nome de cada um dos produtos no console.
 const printName = () => {
     products.forEach((product) => {
-        console.log(product.name)
+        console.log(product.name);
     })
 }
 
-printName()
+printName();
 
 // 3. Imprima no console o produto com o id 3.
 const printSpecificId = (id) => {
     products.forEach((product) => {
-        if ( id === product.id ) console.log(product)
+        if ( id === product.id ) console.log(product);
     })
 }
 
-printSpecificId(3)
+printSpecificId(3);
 
 // 4. Imprima no console os produtos com a cor “black”.
 const printSpecificColor = (color) => {
     products.forEach((product) => {
-        if ( product.colors.includes(color) ) console.log(product)
+        if ( product.colors.includes(color) ) console.log(product);
     })
 }
 
-printSpecificColor('black')
+printSpecificColor('black');
 
 // 5. Imprima no console os produtos que não possuem cor.
 const printWithoutColor = () => {
     products.forEach((product) => {
-        if ( product.colors.length === 0 ) console.log(product)
+        if ( product.colors.length === 0 ) console.log(product);
     })
 }
 
-printWithoutColor()
+printWithoutColor();
